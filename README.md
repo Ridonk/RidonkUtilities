@@ -2,7 +2,7 @@
 
 A simple collection of scripts to handle basic tasks on my computers.
 
-# Installation
+## Installation
 
 `git clone git@github.com:Ridonk/RidonkUtilities.git ~/RidonkUtilities`
 
