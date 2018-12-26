@@ -5,4 +5,3 @@ sudo apt -y dist-ugprade
 sudo apt -y auto-remove
 sudo apt clean
 sudo apt purge -y $(dpkg -l | awk '/^rc/ { print $2 }')
-
