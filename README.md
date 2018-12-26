@@ -6,6 +6,8 @@ A simple collection of scripts to handle basic tasks on my computers.
 
 ### MOTD Script
 
+`cp -l ~/RidonkUtilities/motd.sh ~/motd.sh`
+
 Add the following to your .bashrc or .zshrc files
 
 `sh ~/motd.sh`
