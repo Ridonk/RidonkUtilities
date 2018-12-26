@@ -16,9 +16,11 @@ Add the following to your .bashrc or .zshrc files
 `git clone git@github.com:Ridonk/RidonkUtilities.git ~/RidonkUtilities`
 
 Debian: `cp -l ~/RidonkUtilities/Update.sh ~/Update.sh`
+
 Fedora: `cp -l ~/RidonkUtilities/UpdateRPM.sh ~/Update.sh`
 
 Add the following alias to your .bashrc or .zshrc (depending on shell used)
+
 `alias update="sh ~/Update.sh"`
 
 ## Uninstall
