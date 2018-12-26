@@ -1,5 +1,5 @@
 #!/bin/bash
-dnf update -y
-dnf upgrade -y
-dnf autoremove -y
-dnf clean
+sudo dnf clean all
+sudo dnf update -y
+sudo dnf upgrade -y
+sudo dnf autoremove -y
