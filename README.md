@@ -1,9 +1,20 @@
 # Ridonk\'s Utilities
 
-`git clone git@github.com:Ridonk/RidonkUtilities.git`
+A simple collection of scripts to handle basic tasks on my computers.
 
-Debian: `chmod +x Update.sh` 
-Fedora/Redhat: `chmod +x UpdateRPM.sh`
+# Installation
 
-Debian: `cp -l Update.sh ~/Update.sh`
-Fedora: `cp -l UpdateRPM.sh ~/Update.sh`
+`git clone git@github.com:Ridonk/RidonkUtilities.git ~/RidonkUtilities`
+
+Debian: `cp -l ~/RidonkUtilities/Update.sh ~/Update.sh`
+Fedora: `cp -l ~/RidonkUtilities/UpdateRPM.sh ~/Update.sh`
+
+Add the following alias to your .bashrc or .zshrc (depending on shell used)
+`alias update="sh ~/Update.sh"`
+
+## Uninstall
+
+```
+rm -rf ~/RidonkUtilities
+rm -rf ~/Update.sh
+```
