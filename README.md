@@ -4,6 +4,12 @@ A simple collection of scripts to handle basic tasks on my computers.
 
 ## Installation
 
+### MOTD Script
+
+Add the following to your .bashrc or .zshrc files
+
+`sh ~/motd.sh`
+
 ### Update Scripts
 `git clone git@github.com:Ridonk/RidonkUtilities.git ~/RidonkUtilities`
 
