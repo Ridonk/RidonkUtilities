@@ -121,3 +121,8 @@ stats="$label1\n$label2\n$label3\n$label4"
 
 # Print motd
 echo -e "$header\n$borderEmptyLine\n$greetings\n$borderEmptyLine\n$stats\n$borderEmptyLine\n$borderBottomLine"
+
+dnf -q check-update | cat updates.txt
+
+updates=$(<updates.txt)
+echo "$updates"
