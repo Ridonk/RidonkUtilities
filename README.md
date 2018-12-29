@@ -22,7 +22,7 @@ sh ~/motd.sh
 
 ### Update Scripts
 
-Debian: 
+Ubuntu: 
 ```
 cp -l ~/RidonkUtilities/Update.sh ~/Update.sh
 ```
@@ -40,13 +40,44 @@ alias update="sh ~/Update.sh"
 
 ### Conky Configuration
 
-Install conky with `sudo dnf install conky` or `sudo apt install conky`
+First make sure conky is installed.
+
+Fedora: 
+```
+sudo dnf install conky
+```
+
+Ubuntu:
+```
+sudo apt install conky
+```
 
 Install conky.conf file to .config/conky folder in home directory. Overwrite any files present and create any missing directories.
 
-## Uninstall
+```
+cp -lf ~/RidonkUtilities/conky.conf ~/.config/conky/conky.conf
+```
+
+## Update
+
+Update easily by issuing the following command from the repository's root folder on your file system:
 
 ```
-rm -rf ~/RidonkUtilities
-rm -rf ~/Update.sh
+git pull
+```
+
+## Uninstall
+
+The following script will take care of all file links created during installation steps automagically and then remove the repository.
+
+Ubuntu: 
+
+```
+bash ~/RidonkUtilities/Uninstall.sh
+```
+
+Fedora:
+
+```
+bash ~/RidonkUtilities/UninstallRPM.sh
 ```
