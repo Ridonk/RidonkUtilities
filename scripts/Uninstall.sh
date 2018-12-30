@@ -11,6 +11,7 @@ rm -f ~/Update.sh
 echo 'Removed update script'
 rm -f ~/motd.sh
 echo 'Removed motd script'
+rm -rf ~/RidonkUtilities &
 
 # Wrap up
 
