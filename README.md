@@ -6,7 +6,7 @@ A simple collection of scripts to handle basic tasks on my ubuntu-based computer
 
 ```
 git clone git@github.com:Ridonk/RidonkUtilities.git ~/RidonkUtilities
-bash ~/RidonkUtilities/Install.sh
+bash ~/RidonkUtilities/scripts/Install.sh
 ```
 
 ### MOTD Script
@@ -14,7 +14,7 @@ bash ~/RidonkUtilities/Install.sh
 Manual installation:
 
 ```
-cp -l ~/RidonkUtilities/motd.sh ~/motd.sh
+cp -l ~/RidonkUtilities/scripts/motd.sh ~/motd.sh
 ```
 
 Add the following to your .bashrc or .zshrc files
@@ -27,7 +27,7 @@ bash ~/motd.sh
 
 Manual installation: 
 ```
-cp -l ~/RidonkUtilities/Update.sh ~/Update.sh
+cp -l ~/RidonkUtilities/scripts/Update.sh ~/Update.sh
 ```
 
 Add the following alias to your .bashrc or .zshrc (depending on shell used)
@@ -48,7 +48,7 @@ To manual install put the conky.conf file to .config/conky folder in home direct
 
 ```
 mkdir ~/.config/conky
-cp -lf ~/RidonkUtilities/conky.conf ~/.config/conky/conky.conf
+cp -lf ~/RidonkUtilities/config/conky.conf ~/.config/conky/conky.conf
 ```
 
 ## Update
@@ -56,6 +56,7 @@ cp -lf ~/RidonkUtilities/conky.conf ~/.config/conky/conky.conf
 Update easily by issuing the following command from the repository's root folder on your file system:
 
 ```
+cd ~/RidonkUtilities
 git pull
 ```
 
@@ -64,5 +65,5 @@ git pull
 The following script will take care of all file links created during installation steps automagically and then remove the repository.
 
 ```
-bash ~/RidonkUtilities/Uninstall.sh
+bash ~/RidonkUtilities/scripts/Uninstall.sh
 ```
